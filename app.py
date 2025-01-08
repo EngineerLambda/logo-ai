@@ -19,20 +19,41 @@ def create_logo(description: str, num_images: int=4):
 
     Args:
         description (str): A detailed description of the logo to be generated.
+        num_images (int): Number of logos to generate (default is 4)
 
     Returns:
         list: A list of URLs pointing to the generated logo images.
 
     Example:
         Request:
-            GET /create_logo/?description=A modern logo with a green leaf and blue background
+            GET /create_logo/?description=Macbook retailer, green accent, black theme
 
         Response:
             [
-                "https://example.com/image_1.jpg",
-                "https://example.com/image_2.jpg",
-                "https://example.com/image_3.jpg",
-                "https://example.com/image_4.jpg"
+                {
+                    "url": "https://fal.media/files/penguin/qf-ngi8RnItTbNrk7mkB5.png",
+                    "width": 1024,
+                    "height": 768,
+                    "content_type": "image/jpeg"
+                },
+                {
+                    "url": "https://fal.media/files/tiger/yFH7gaUAqo2FCCtf5VLEq.png",
+                    "width": 1024,
+                    "height": 768,
+                    "content_type": "image/jpeg"
+                },
+                {
+                    "url": "https://fal.media/files/zebra/rWQwuH3VT-LVtNQCWms4U.png",
+                    "width": 1024,
+                    "height": 768,
+                    "content_type": "image/jpeg"
+                },
+                {
+                    "url": "https://fal.media/files/rabbit/JEIGfy1c9wTSl_o3HDHt9.png",
+                    "width": 1024,
+                    "height": 768,
+                    "content_type": "image/jpeg"
+                }
             ]
     """
     
